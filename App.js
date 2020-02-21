@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Piple from 'components/piple-logo.js';
+import Piple from './components/piple-logo.js';
+import FirebaseDB from './config.js'
 
+// @flow
 export default function App() {
   return (
     <View style={styles.container}>
       <Piple/>
-      <Text>Hello!</Text>
+      <FirebaseDB/>
     </View>
   );
 }
